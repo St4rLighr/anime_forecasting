@@ -1,5 +1,5 @@
 
-CREATE TABLE `anime-forecasting.main_table_joined_not_exploaded.inner_join_mega_table_exclude_eps_not_exploaded` AS
+CREATE TABLE `REDACTED.REDACTED.inner_join_mega_table_exclude_eps_not_exploaded` AS
 SELECT 
 a.idMal,
 a.title,
@@ -29,14 +29,14 @@ kg.Popularity,
 kg.Favorites,
 kg.Scored_by
 
-FROM `anime-forecasting.Anilist_dataset_not_exploaded.anilist_excluding_eps_main_table` as a
-JOIN `anime-forecasting.Kaggle_dataset.Kaggle_data` as kg
+FROM `REDACTED.REDACTED.anilist_excluding_eps_main_table` as a
+JOIN `REDACTED.Kaggle_dataset.Kaggle_data` as kg
 ON a.idMal = kg.anime_id
 
 
 -- Left join
   
-CREATE TABLE `anime-forecasting.main_table_joined_not_exploaded.left_join_mega_table_exclude_eps_not_exploaded` AS
+CREATE TABLE `REDACTED.REDACTED.left_join_mega_table_exclude_eps_not_exploaded` AS
 SELECT 
 a.idMal,
 a.title,
@@ -66,6 +66,6 @@ kg.Popularity,
 kg.Favorites,
 kg.Scored_by
 
-FROM `anime-forecasting.Anilist_dataset_not_exploaded.anilist_excluding_eps_main_table` as a
-LEFT JOIN `anime-forecasting.Kaggle_dataset.Kaggle_data` as kg
+FROM `REDACTED.REDACTED.anilist_excluding_eps_main_table` as a
+LEFT JOIN `REDACTED.Kaggle_dataset.Kaggle_data` as kg
 ON a.idMal = kg.anime_id
