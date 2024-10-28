@@ -1,4 +1,4 @@
-CREATE TABLE `xxx.xxx.joined_links_data` AS
+CREATE TABLE `REDACTED.REDACTED.joined_links_data` AS
 SELECT
 a.id,
 a.idMal,
@@ -33,7 +33,7 @@ a.tags,
 el.sites AS external_sites,
 el.types AS external_types 
 
-FROM `xxx.xxx.to_join_8` AS a
-LEFT JOIN `xxx.xxx.to_join_links_8` AS el
+FROM `REDACTED.REDACTED.to_join_8` AS a
+LEFT JOIN `REDACTED.REDACTED.to_join_links_8` AS el
 ON a.id = el.id
 WHERE format = 'TV'
